@@ -8,8 +8,8 @@ class Count(Resource):
         second = request.args.get('second')
 
         if method and first and second:
-            first = float(first)
-            second = float(second)
+            first = int(first)
+            second = int(second)
             if method == "sum":
                 method = "penjumlahan"
                 result = first + second
